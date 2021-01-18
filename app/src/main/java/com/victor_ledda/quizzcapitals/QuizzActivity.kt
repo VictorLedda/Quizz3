@@ -18,10 +18,10 @@ class QuizzActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quizz)
-        quizs.add(Quiz("Quelle est la capitale de la France", "Alger","Paris","Milan","Mexico","R.drawable.paris" ,2))
-        quizs.add(Quiz("Quelle est la capitale de l'Angleterre", "Paris","Londres","Sydney","Sao Paulo","R.drawable.londres",2))
-        quizs.add(Quiz("Quelle est la capitale de l'Allemagne", "Moscou","Paris","Berlin","Los Angeles","R.drawable.berlin",3))
-        quizs.add(Quiz("Quelle est la capitale du Brésil", "Brasilia","Berlin","Turin","Constantinople","R.drawable.brasilia", 1 ))
+        quizs.add(Quiz("Quelle est la capitale de la France", "Alger","Paris","Milan","Mexico",1 ,2))
+        quizs.add(Quiz("Quelle est la capitale de l'Angleterre", "Paris","Londres","Sydney","Sao Paulo",2,2))
+        quizs.add(Quiz("Quelle est la capitale de l'Allemagne", "Moscou","Paris","Berlin","Los Angeles",5,3))
+        quizs.add(Quiz("Quelle est la capitale du Brésil", "Brasilia","Berlin","Turin","Constantinople",6, 1 ))
    showQuestion(quizs.get(currentQuizIndex))
     }
 
@@ -34,7 +34,7 @@ class QuizzActivity : AppCompatActivity() {
         val answer4: TextView = findViewById(R.id.answer4)
         val imageHome: ImageView = findViewById(R.id.image);
         txtQuestion.setText(quiz.question)
-        imageHome.setImageResource(quiz.image)
+        imageHome.setImageResource(quiz.imageHome)
         answer1.setText(quiz.answer1)
         answer2.setText(quiz.answer2)
         answer3.setText(quiz.answer3)
