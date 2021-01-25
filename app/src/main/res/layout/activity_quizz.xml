@@ -34,7 +34,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
-        android:onClick="onClickAnwer1"
+        android:onClick="onClickAnswer1"
         android:shadowRadius="10"
         android:text="Button"
         android:textColor="@color/black"
@@ -76,10 +76,10 @@
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answer3" />
+        app:layout_constraintTop_toBottomOf="@+id/ans3" />
 
     <Button
-        android:id="@+id/answer3"
+        android:id="@+id/ans3"
         android:layout_width="345dp"
         android:layout_height="52dp"
         android:layout_marginStart="33dp"
@@ -87,6 +87,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
+        android:onClick="onClickAnswer3"
         android:text="Button"
         android:textColor="@color/black"
         app:backgroundTint="@color/white"
@@ -107,6 +108,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtQuestion"
-        app:srcCompat="@drawable/paris" />
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion" />
 </androidx.constraintlayout.widget.ConstraintLayout>
